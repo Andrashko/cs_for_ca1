@@ -1,0 +1,14 @@
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\bin\Debug\netcoreapp3.1\WindowsFormsAppArray.exe
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\bin\Debug\netcoreapp3.1\WindowsFormsAppArray.deps.json
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\bin\Debug\netcoreapp3.1\WindowsFormsAppArray.runtimeconfig.json
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\bin\Debug\netcoreapp3.1\WindowsFormsAppArray.runtimeconfig.dev.json
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\bin\Debug\netcoreapp3.1\WindowsFormsAppArray.dll
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\bin\Debug\netcoreapp3.1\WindowsFormsAppArray.pdb
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.Form1.resources
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.csproj.GenerateResource.cache
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.AssemblyInfoInputs.cache
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.AssemblyInfo.cs
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.csproj.CoreCompileInputs.cache
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.dll
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.pdb
+C:\Projects\cs\WindowsFormsAppArray\WindowsFormsAppArray\obj\Debug\netcoreapp3.1\WindowsFormsAppArray.genruntimeconfig.cache
