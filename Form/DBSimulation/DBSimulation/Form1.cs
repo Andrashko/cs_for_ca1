@@ -50,6 +50,11 @@ namespace DBSimulation
 
         private void Show(List<PC> list)
         {
+            if (list.Count == 0)
+            {
+                MessageBox.Show("Нема що виводити");
+                return;
+            }
             dataGridView1.RowCount = list.Count;
             for (int i=0;i<list.Count;i++)
             {
@@ -101,6 +106,18 @@ namespace DBSimulation
            
            Show(_db.Query(pc => pc.Price<=MaxPrice));
             tabControl1.SelectedIndex = 0; 
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string processor = textBoxProc.Text;
+            Show(_db.Query(pc => pc.Processor.ToUpper().Contains(processor.ToUpper())));
+            tabControl1.SelectedIndex = 0;
         }
     }
 }
