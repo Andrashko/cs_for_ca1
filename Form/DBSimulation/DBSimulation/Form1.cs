@@ -108,11 +108,6 @@ namespace DBSimulation
             tabControl1.SelectedIndex = 0; 
         }
 
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             string processor = textBoxProc.Text;

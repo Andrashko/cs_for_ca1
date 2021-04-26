@@ -47,12 +47,12 @@ namespace DBSimulation
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxProcessor = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxProc = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxMaxPrice = new System.Windows.Forms.TextBox();
-            this.textBoxProc = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -70,7 +70,6 @@ namespace DBSimulation
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(785, 426);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -238,6 +237,32 @@ namespace DBSimulation
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(609, 109);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(94, 29);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Знайти";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(77, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Процесор";
+            // 
+            // textBoxProc
+            // 
+            this.textBoxProc.Location = new System.Drawing.Point(216, 106);
+            this.textBoxProc.Name = "textBoxProc";
+            this.textBoxProc.Size = new System.Drawing.Size(338, 27);
+            this.textBoxProc.TabIndex = 3;
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(609, 36);
@@ -263,32 +288,6 @@ namespace DBSimulation
             this.textBoxMaxPrice.Name = "textBoxMaxPrice";
             this.textBoxMaxPrice.Size = new System.Drawing.Size(339, 27);
             this.textBoxMaxPrice.TabIndex = 0;
-            // 
-            // textBoxProc
-            // 
-            this.textBoxProc.Location = new System.Drawing.Point(216, 106);
-            this.textBoxProc.Name = "textBoxProc";
-            this.textBoxProc.Size = new System.Drawing.Size(338, 27);
-            this.textBoxProc.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(77, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Процесор";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(609, 109);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 29);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Знайти";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
