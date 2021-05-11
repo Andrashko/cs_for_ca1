@@ -80,6 +80,7 @@ namespace DBSimulation
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button9);
             this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button7);
             this.tabPage1.Controls.Add(this.button6);
@@ -340,11 +341,11 @@ namespace DBSimulation
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(424, 395);
+            this.button9.Location = new System.Drawing.Point(381, 340);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(94, 29);
             this.button9.TabIndex = 1;
-            this.button9.Text = "button9";
+            this.button9.Text = "Завантажити";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -353,7 +354,6 @@ namespace DBSimulation
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
