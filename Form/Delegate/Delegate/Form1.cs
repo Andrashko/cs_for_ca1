@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Delegate
 {
+
+    
+
     public partial class Form1 : Form
     {
 
@@ -56,6 +59,7 @@ namespace Delegate
         public Form1()
         {
             InitializeComponent();
+            input = new InputForm(this);
         }
 
         //Опис делегату обробника події
@@ -74,8 +78,15 @@ namespace Delegate
             MyEvent += ShowMessage;            
         }
 
+
+        //стандартний тип
+        event EventHandler<MyEventArgs> MyClick = delegate { };
+
         private void button1_Click(object sender, EventArgs e)
         {
+            MyEventArgs eArg = new MyEventArgs(42);
+            MyClick.Invoke(sender, eArg);
+
             int[] arr = new int[5] { -3, 2, 0, 7, -5 };
             int ArePositive = CountElements(arr, IsPositive);
             if (ArePositive > 0)
@@ -87,6 +98,21 @@ namespace Delegate
             int Are42 = CountElements(arr, Is42);
             MessageBox.Show(Are42.ToString());
             double[] radArr = Map(arr, DegToRad);
+        }
+
+        protected InputForm input;
+        private void button2_Click(object sender, EventArgs e)
+        {
+            input.Show();
+        }
+    }
+
+    public class MyEventArgs : EventArgs
+    {
+        public int code;
+        public MyEventArgs(int code) : base()
+        {
+            this.code = code;
         }
     }
 }

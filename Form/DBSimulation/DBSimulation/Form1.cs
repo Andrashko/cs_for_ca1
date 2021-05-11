@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DBSimulation
 {
@@ -15,8 +16,8 @@ namespace DBSimulation
         public Form1()
         {
             InitializeComponent();
-            FillTestData();
-            Show(_db.GetAll());
+            //FillTestData();
+            //Show(_db.GetAll());
         }
 
         private PcDatabase _db = new PcDatabase();
@@ -113,6 +114,76 @@ namespace DBSimulation
             string processor = textBoxProc.Text;
             Show(_db.Query(pc => pc.Processor.ToUpper().Contains(processor.ToUpper())));
             tabControl1.SelectedIndex = 0;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                StreamReader file = new StreamReader("data.txt");
+                int number = Convert.ToInt32(file.ReadLine());
+                MessageBox.Show(number.ToString());
+                string text = file.ReadLine();
+                MessageBox.Show(text);
+                string strArr = file.ReadLine();
+                file.Close();
+                string[] splited = strArr.Split();
+                int[] numbers = new int[splited.Length];
+                int sum = 0;
+                for (int i = 0; i < splited.Length; i++)
+                {
+                    numbers[i] = Convert.ToInt32(splited[i]);
+                    sum += numbers[i];
+                }
+                MessageBox.Show(sum.ToString());
+            } 
+            catch  (FileNotFoundException err)
+            {
+                MessageBox.Show("Файл не знайдено");
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show($"Інша помилка {err.Message}") ;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                StreamWriter file = new StreamWriter("out.txt", true);
+                Random rnd = new Random();
+                double num = rnd.NextDouble();
+                file.WriteLine(num.ToString());
+                file.Close();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this._db.SaveToFile(saveFileDialog1.FileName);
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this._db.ReadFromFile(openFileDialog1.FileName);
+                this.Show(this._db.GetAll());
+            }
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
